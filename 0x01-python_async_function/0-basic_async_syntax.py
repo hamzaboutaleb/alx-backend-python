@@ -15,8 +15,7 @@ async def wait_random(max_delay: int = 10) -> float:
     Returns:
       time function take to execute
     """
-    start = time.time()
-    rand = random.randint(0, max_delay)
-    await asyncio.sleep(rand)
-    end = time.time()
-    return end - start
+
+    delay = random.uniform(0, max_delay)
+    await asyncio.sleep(delay)
+    return delay
