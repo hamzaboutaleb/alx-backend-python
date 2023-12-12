@@ -20,4 +20,5 @@ def task_wait_random(max_delay: int):
         A task that represents the execution of 'wait_random'
         with the given 'max_delay'.
     """
-    return asyncio.create_task(wait_random(max_delay))
+    task = asyncio.create_task(wait_random(max_delay))
+    return task
