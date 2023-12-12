@@ -23,8 +23,3 @@ def measure_time(n: int, max_delay: int = 10) -> float:
     end = time.time()
 
     return (end - start) / n
-
-n = 5
-max_delay = 9
-
-print(measure_time(n, max_delay))
