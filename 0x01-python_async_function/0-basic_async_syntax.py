@@ -20,7 +20,3 @@ async def wait_random(max_delay: int = 10) -> float:
     await asyncio.sleep(rand)
     end = time.time()
     return end - start
-
-print(asyncio.run(wait_random()))
-print(asyncio.run(wait_random(5)))
-print(asyncio.run(wait_random(15)))
