@@ -10,4 +10,4 @@ def concat(str1: str, str2: str) -> str:
     Returns:
         string
     """
-    return f"{str1} {str2}"
+    return f"{str1}{str2}"
